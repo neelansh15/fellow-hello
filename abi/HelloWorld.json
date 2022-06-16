@@ -1,0 +1,55 @@
+[
+    {
+        "type": "constructor",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "string",
+                "name": "initMessage"
+            }
+        ]
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "UpdatedMessages",
+        "inputs": [
+            {
+                "type": "string",
+                "name": "oldStr",
+                "indexed": false
+            },
+            {
+                "type": "string",
+                "name": "newStr",
+                "indexed": false
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "message",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "update",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "string",
+                "name": "newMessage"
+            }
+        ],
+        "outputs": []
+    }
+]
